@@ -1,0 +1,18 @@
+server_protocol: "https"
+server_port: 443
+server_name: "canvas.server.com"
+canvas_token: "xxxxxxxxxxxxxxxxxxx"
+canvas_account_id: 2
+term_id: "loadtest1"
+term_name: "Load Test"
+discussion_title: "Load Test Topic"
+discussion_message: "Welcome to the load testing topic"
+assignment_name: "Assignment 1"
+assignment_description: "First assignment. Go submit something."
+num_of_courses: 10
+num_of_users: 120
+jmeter_users: 1
+jmeter_loops: 1
+jmeter_ramp_up: 0
+jmeter_delay_constant: 5000
+jmeter_delay_deviation: 5000

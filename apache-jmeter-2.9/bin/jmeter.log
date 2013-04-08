@@ -1,0 +1,65 @@
+2013/03/26 16:38:06 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: Loading user properties from: /Users/santos/Dropbox/jmeter/apache-jmeter-2.9/bin/user.properties 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: Loading system properties from: /Users/santos/Dropbox/jmeter/apache-jmeter-2.9/bin/system.properties 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: Copyright (c) 1998-2013 The Apache Software Foundation 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: Version 2.9 r1437961 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: java.version=1.7.0_17 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: os.name=Mac OS X 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: os.arch=x86_64 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: os.version=10.7.5 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: file.encoding=US-ASCII 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: JMeterHome=/Users/santos/Dropbox/jmeter/apache-jmeter-2.9 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: user.dir  =/Users/santos/Dropbox/jmeter/apache-jmeter-2.9/bin 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: PWD       =/Users/santos/Dropbox/jmeter/apache-jmeter-2.9/bin 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: IP: 142.58.3.180 Name: icat-ron.its.sfu.ca FullName: icat-ron.its.sfu.ca 
+2013/03/26 16:38:06 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2013/03/26 16:38:07 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2013/03/26 16:38:07 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2013/03/26 16:38:08 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: com.apple.laf.AquaLookAndFeel [Mac OS X, System] 
+2013/03/26 16:38:08 INFO  - jmeter.util.BSFTestElement: Registering JMeter version of JavaScript engine as work-round for BSF-22 
+2013/03/26 16:38:09 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2013/03/26 16:38:09 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2013/03/26 16:38:09 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2013/03/26 16:38:09 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2013/03/26 16:38:09 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2013/03/26 16:38:09 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2013/03/26 16:38:09 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Reuse SSL session context on subsequent iterations: true 
+2013/03/26 16:38:09 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.http.modifier.gui.ParamModifierGui 
+2013/03/26 16:38:09 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2013/03/26 16:38:09 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2013/03/26 16:38:09 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2013/03/26 16:38:09 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2013/03/26 16:38:54 INFO  - jmeter.services.FileServer: Default base='/Users/santos/Dropbox/jmeter/apache-jmeter-2.9/bin' 
+2013/03/26 16:38:54 INFO  - jmeter.gui.action.Load: Loading file: /Users/santos/Dropbox/canvas/load-test/canvas-load-test-script2.jmx 
+2013/03/26 16:38:54 INFO  - jmeter.services.FileServer: Set new base='/Users/santos/Dropbox/canvas/load-test' 
+2013/03/26 16:38:55 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2013/03/26 16:38:55 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2013/03/26 16:38:55 INFO  - jmeter.save.SaveService: Using SaveService properties file version 1427507 
+2013/03/26 16:38:55 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.4 
+2013/03/26 16:38:55 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2013/03/26 16:38:55 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
+2013/03/26 16:38:55 INFO  - jmeter.services.FileServer: Set new base='/Users/santos/Dropbox/canvas/load-test' 
+2013/03/26 16:39:03 INFO  - jmeter.engine.StandardJMeterEngine: Listeners will be started after enabling running version 
+2013/03/26 16:39:03 INFO  - jmeter.engine.StandardJMeterEngine: To revert to the earlier behaviour, define jmeterengine.startlistenerslater=false 
+2013/03/26 16:39:03 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2013/03/26 16:39:03 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2013/03/26 16:39:03 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group 
+2013/03/26 16:39:03 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Thread Group. 
+2013/03/26 16:39:03 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2013/03/26 16:39:03 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 0 perThread 0.0 delayedStart=false 
+2013/03/26 16:39:03 INFO  - jmeter.threads.JMeterThread: jmeterthread.startearlier=true (see jmeter.properties) 
+2013/03/26 16:39:03 INFO  - jmeter.threads.JMeterThread: Running PostProcessors in forward order 
+2013/03/26 16:39:03 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2013/03/26 16:39:03 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2013/03/26 16:39:03 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-1 
+2013/03/26 16:39:03 INFO  - jmeter.services.FileServer: Stored: lib/server.csv 
+2013/03/26 16:39:07 INFO  - jmeter.gui.action.Start: Stopping test 
+2013/03/26 16:39:08 INFO  - jmeter.threads.JMeterThread: Stopping: Thread Group 1-1 
+2013/03/26 16:39:08 WARN  - jmeter.threads.JMeterThread: The delay timer was interrupted - probably did not wait as long as intended. 
+2013/03/26 16:39:08 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-1 
+2013/03/26 16:39:08 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2013/03/26 16:39:08 INFO  - jmeter.services.FileServer: Close: lib/server.csv 
+2013/03/26 16:39:08 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
