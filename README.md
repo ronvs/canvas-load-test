@@ -4,11 +4,9 @@
 
 
 <h3>Requirements</h3>
-    <ul>
-        <li>Java</li>
-        <li>Ruby 1.9</li>
-        <li>Gems; fileutils, json, nokogiri, open-uri, rest-client, yaml</li>
-    </ul>
+* Java
+* Ruby 1.9
+* Gems: fileutils, json, nokogiri, open-uri, rest-client, yaml
 
 
 <h3>Installation/Setup</h3>
