@@ -13,18 +13,18 @@ $ gem install bundler
 </pre>
 
 ## Installation/Setup ##
-* Download canvas-load-test from github
-* Download GEMS
+1. Download canvas-load-test from github
+2. Download GEMS
 <pre>
 	$ cd canvas-load-test
 	$ bundle install
 </pre>
-* Run 'ruby setup.rb all'
+3. Run 'ruby setup.rb all'
 <pre>
 	Usage:  ruby setup.rb < all | sis_imports | discussions | content > [optional: URL]
 	Example: ruby setup.rb content http://localhost/canvas/load-test-variables/index.html
 </pre>	
-* Start JMeter
+4. Start JMeter
  * Standalone - 
 <pre>
 	sh startJMeter-gui.sh
