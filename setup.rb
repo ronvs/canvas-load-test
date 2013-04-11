@@ -1,18 +1,17 @@
-#!/Users/santos/.rvm/rubies/ruby-1.9.3-p286/bin/ruby
-
 require "yaml"
 require "fileutils"
 require_relative "lib/canvas"
 require_relative "lib/sis"
 require_relative "lib/csv"
 require_relative "lib/content"
+require_relative "lib/global"
 
 @run_sis_imports = false
 @run_discussions = false
 @run_content = false
 
 if ARGV.empty?
-  puts "Usage: ruby setup.rb < all | sis_imports | discussions | content >"
+  puts "Usage: ruby setup.rb < all | sis_imports | discussions | content > [url]"
   exit
 end
 
@@ -29,7 +28,12 @@ elsif ARGV.first.eql? "content"
   @run_content = true
 end
 
-var = YAML.load_file File.dirname(__FILE__) + "/config/global_variables.yml"
+if ARGV[1].nil?
+  var = Global.from_yaml File.dirname(__FILE__) + "/config/global_variables.yml"
+else
+  var = Global.from_json ARGV[1]
+end
+
 sis_import = SIS.new(var["num_of_courses"], var["num_of_users"], var["term_name"], var["term_id"])
 
 puts "Setting load test data on #{Canvas::Server.server}"
