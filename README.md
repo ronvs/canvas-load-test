@@ -8,8 +8,9 @@
 * Ruby 1.9
 * Bundler
 
+<pre>
 $ gem install bundler
-```
+</pre>
 
 ## Installation/Setup ##
 * Download canvas-load-test from github
