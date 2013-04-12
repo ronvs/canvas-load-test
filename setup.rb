@@ -1,6 +1,5 @@
 require "yaml"
 require "fileutils"
-require_relative "lib/canvas"
 require_relative "lib/sis"
 require_relative "lib/csv"
 require_relative "lib/content"
@@ -35,6 +34,8 @@ else
   Global.to_yaml_from_json ARGV[1]
 end
 
+Global.check_dir File.dirname(__FILE__) + "/data"
+require_relative "lib/canvas"
 sis_import = SIS.new(var["num_of_courses"], var["num_of_users"], var["term_name"], var["term_id"])
 
 puts "Setting load test data on #{Canvas::Server.server}"

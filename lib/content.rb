@@ -13,7 +13,7 @@ module Content
 
     def random_content
       doc = Nokogiri::HTML(open random_article)
-      unless doc.css('p').first.content.nil?
+      unless doc.css('p').first.nil?
         doc.css('p').first.content
       else
         "This should be a random content from a random Wikipedia article"
@@ -22,7 +22,7 @@ module Content
 
     def random_title
       doc = Nokogiri::HTML(open random_article)
-      unless doc.css('title').first.content.nil?
+      unless doc.css('title').first.nil?
         doc.css('title').first.content
       else
         "This should be a random title from a random Wikipedia article"

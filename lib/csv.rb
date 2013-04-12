@@ -1,7 +1,10 @@
+require_relative "global"
+
 module CSV
   extend self
 
   def update_config_csv(type, data)
+    Global.check_dir File.dirname(__FILE__) + "/../config"
     file = File.dirname(__FILE__) + "/../config/#{type}_config.csv"
 
     begin
@@ -26,6 +29,8 @@ module CSV
   end
 
   def update_data_csv(type, data, num=nil)
+    Global.check_dir File.dirname(__FILE__) + "/../data/#{type}"
+
     if num.nil?
       file = File.dirname(__FILE__) + "/../data/#{type}/#{type}.csv"
     else
@@ -44,6 +49,7 @@ module CSV
 
   def generate_random_content(num_of_users)
     num = 1
+    Global.check_dir File.dirname(__FILE__) + "/../data/content"
     num_of_users.times do
       filename = File.dirname(__FILE__) + "/../data/content/content_#{num}.csv"
       begin
