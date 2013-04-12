@@ -32,6 +32,7 @@ if ARGV[1].nil?
   var = Global.from_yaml File.dirname(__FILE__) + "/config/global_variables.yml"
 else
   var = Global.from_json ARGV[1]
+  Global.to_yaml_from_json ARGV[1]
 end
 
 sis_import = SIS.new(var["num_of_courses"], var["num_of_users"], var["term_name"], var["term_id"])

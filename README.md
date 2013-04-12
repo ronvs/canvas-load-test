@@ -9,11 +9,14 @@
 * Bundler
 
 <pre>
-$ gem install bundler
+    $ gem install bundler
 </pre>
 
 ## Installation/Setup ##
 1. Download canvas-load-test from github
+<pre>
+    $ git clone git://github.com/ronvs/canvas-load-test.git
+</pre>
 2. Download GEMS
 <pre>
 	$ cd canvas-load-test
@@ -31,5 +34,5 @@ $ gem install bundler
 </pre>	
  * Remote - 
 <pre>
-	sh startJMeter-server.sh
+	sh startJMeter-server. &
 </pre>	
