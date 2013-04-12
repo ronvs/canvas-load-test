@@ -82,5 +82,5 @@ puts "Done"
 puts ""
 puts "-------------------------------------------------------"
 puts "*** NOTE ***"
-puts " - Publish the #{sis_import.num_courses} Load Test Courses before running the JMeter test plan"
+puts "- Ensure the #{sis_import.num_courses} Load Test Courses are PUBLISHED before running the JMeter test plan"
 
