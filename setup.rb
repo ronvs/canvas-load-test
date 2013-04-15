@@ -5,26 +5,24 @@ require_relative "lib/csv"
 require_relative "lib/content"
 require_relative "lib/global"
 
-@run_sis_imports = false
-@run_discussions = false
-@run_content = false
-
 if ARGV.empty?
-  puts "Usage: ruby setup.rb < all | sis_imports | discussions | content > [url]"
+  puts "Usage: ruby setup.rb < all | update | sis_imports | discussions | content > [url]"
   exit
 end
 
 if ARGV.first.eql? "all"
-  @run_sis_imports = true
-  @run_assignments = true
-  @run_discussions = true
-  @run_content = true
+  update
+  sis_imports
+  discussions
+  content
 elsif ARGV.first.eql? "sis_imports"
-  @run_sis_imports = true
+  sis_imports
 elsif ARGV.first.eql? "discussions"
-  @run_discussions = true
+  discussions
 elsif ARGV.first.eql? "content"
-  @run_content = true
+  content
+elsif ARGV.first.eql? "update"
+  update
 end
 
 if ARGV[1].nil?
@@ -41,7 +39,7 @@ sis_import = SIS.new(var["num_of_courses"], var["num_of_users"], var["term_name"
 puts "Setting load test data on #{Canvas::Server.server}"
 puts "-------------------------------------------------------"
 
-if @run_sis_imports
+def sis_imports
   puts "Importing Term CSV"
   Canvas::Server.sis_import sis_import.terms
 
@@ -55,14 +53,15 @@ if @run_sis_imports
   Canvas::Server.sis_import sis_import.enrollments
 end
 
-# Setup server_config.csv for JMeter
-CSV.update_config_csv("server", "#{var["server_protocol"]},#{var["server_name"]},#{var["server_port"]},#{var["canvas_token"]}")
-CSV.update_config_csv("test", "#{var["num_of_courses"]},#{var["jmeter_users"]},#{var["jmeter_loops"]},#{var["jmeter_ramp_up"]},#{var["jmeter_delay_constant"]},#{var["jmeter_delay_deviation"]}")
-courses = Canvas::Course.load_test_courses var["num_of_courses"]
-CSV.update_config_csv("course","#{courses.first["id"]},#{courses.last["id"]}")
+def update
+  # Setup server_config.csv for JMeter
+  CSV.update_config_csv("server", "#{var["server_protocol"]},#{var["server_name"]},#{var["server_port"]},#{var["canvas_token"]}")
+  CSV.update_config_csv("test", "#{var["num_of_courses"]},#{var["jmeter_users"]},#{var["jmeter_loops"]},#{var["jmeter_ramp_up"]},#{var["jmeter_delay_constant"]},#{var["jmeter_delay_deviation"]}")
+  courses = Canvas::Course.load_test_courses var["num_of_courses"]
+  CSV.update_config_csv("course","#{courses.first["id"]},#{courses.last["id"]}")
+end
 
-
-if @run_discussions
+def discussions
   puts "Creating Discussion Topic"
   num = 1
   courses.each do |course|
@@ -73,7 +72,7 @@ if @run_discussions
   end
 end
 
-if @run_content
+def content
   puts "Getting random content from Wikipedia"
   CSV.generate_random_content(var["num_of_users"])
 end
