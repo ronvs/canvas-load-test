@@ -12,7 +12,7 @@ if ARGV.empty?
 end
 
 if ARGV[1].nil?
-  @var = Global.from_yaml File.dirname(__FILE__) + "/config/global_@variables.yml"
+  @var = Global.from_yaml File.dirname(__FILE__) + "/config/global_variables.yml"
 else
   @var = Global.from_json ARGV[1]
   Global.to_yaml_from_json ARGV[1]
