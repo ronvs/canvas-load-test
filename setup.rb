@@ -4,7 +4,7 @@ require_relative "lib/sis"
 require_relative "lib/csv"
 require_relative "lib/content"
 require_relative "lib/global"
-require_relative "lib/Options"
+require_relative "lib/options"
 
 if ARGV.empty?
   puts "Usage: ruby setup.rb < all | update | sis_imports | discussions | content > [url]"
